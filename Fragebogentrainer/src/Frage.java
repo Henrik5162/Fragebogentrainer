@@ -560,7 +560,7 @@ public class Frage {
 				 try {
 					 
 					  
-					writer = new BufferedWriter(new FileWriter("saves/Richtig.txt"));			//Variable zum bearbeiten der .txt Datei
+					writer = new BufferedWriter(new FileWriter("Richtig.txt"));			//Variable zum bearbeiten der .txt Datei
 					 for(int b=0;b<Richtig.length;b++){								
 						 
 							if(Richtig[b]){				//Wenn eine Frage richtig ist
@@ -586,7 +586,7 @@ public class Frage {
 				 BufferedWriter writer2 = null;
 					
 				 try {
-					writer2 = new BufferedWriter(new FileWriter("saves/Falsch.txt"));
+					writer2 = new BufferedWriter(new FileWriter("Falsch.txt"));
 					 for(int q=0;q<Falsch.length;q++){
 						 
 							if(Falsch[q]){
@@ -611,7 +611,7 @@ public class Frage {
 				 //Alter 
 				 
 				 try {
-					writer = new BufferedWriter(new FileWriter("saves/Alter.txt"));			//Variable zum bearbeiten der .txt Datei							
+					writer = new BufferedWriter(new FileWriter("Alter.txt"));			//Variable zum bearbeiten der .txt Datei							
 						 
 							if(jung==true){				//Wenn alter == jung
 								try {
@@ -644,7 +644,7 @@ public class Frage {
 		 
 		 	BufferedReader rd= null;
 		 	try {
-		 		rd= new BufferedReader(new FileReader("saves/Richtig.txt"));
+		 		rd= new BufferedReader(new FileReader("Richtig.txt"));
 		 		
 		 		String inputLine = null;
 		 		while((inputLine= rd.readLine())!=null) {
@@ -677,7 +677,7 @@ public class Frage {
 		 	//Falsch
 		 	BufferedReader rd2= null;
 		 	try {
-		 		rd2= new BufferedReader(new FileReader(new File("saves/Falsch.txt")));
+		 		rd2= new BufferedReader(new FileReader(new File("Falsch.txt")));
 		 		
 		 		String inputLine = null;
 		 		while((inputLine= rd2.readLine())!=null) {
@@ -711,7 +711,7 @@ public class Frage {
 		 	//Alter
 		 	BufferedReader rd3= null;
 		 	try {
-		 		rd3= new BufferedReader(new FileReader(new File("saves/Alter.txt")));
+		 		rd3= new BufferedReader(new FileReader(new File("Alter.txt")));
 		 		
 		 		String inputLine = null;
 		 		while((inputLine= rd3.readLine())!=null) {
@@ -1003,8 +1003,8 @@ public class Frage {
 					 txtBeantwortet.setVisible(false);
 					 try {
 			
-						writer3 = new BufferedWriter(new FileWriter("saves/Richtig.txt"));
-						writer4 = new BufferedWriter(new FileWriter("saves/Falsch.txt"));
+						writer3 = new BufferedWriter(new FileWriter("Richtig.txt"));
+						writer4 = new BufferedWriter(new FileWriter("Falsch.txt"));
 						 for(int b=0;b<Fragenspeicher.Frage.length;b++){
 							 //setzr Richtg und Falsch an jeder Stelle auf false
 							 	Richtig[b]=false;
